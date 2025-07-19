@@ -113,7 +113,7 @@ index bf7ae09f..78d851db 100644
 +        // Waterfall start
 +        return handleChat(message, null);
 +    }
-+    private String handleChat(String message, @javax.annotation.Nullable ClientCommand clientCommand)
++    private String handleChat(String message, ClientCommand clientCommand)
 +    // Waterfall end
      {
          for ( int index = 0, length = message.length(); index < length; index++ )
