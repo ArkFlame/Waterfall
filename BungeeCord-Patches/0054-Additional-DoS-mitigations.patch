@@ -1,4 +1,4 @@
-From 368c75dee528a0babbd8036944a9b3dea1914ce7 Mon Sep 17 00:00:00 2001
+From 82e21345043975c4ef0bc86ccd1a57e376a885a1 Mon Sep 17 00:00:00 2001
 From: "Five (Xer)" <admin@fivepb.me>
 Date: Sat, 30 Jan 2021 18:04:14 +0100
 Subject: [PATCH] Additional DoS mitigations
@@ -8,10 +8,10 @@ Courtesy of Tux and the Velocity Contributors. See:
 https://github.com/VelocityPowered/Velocity/commit/5ceac16a821ea35572ff11412ace8929fd06e278
 
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java b/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java
-index 267ebc40..adfcc189 100644
+index afad2ce2..0480c8f1 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java
-@@ -92,6 +92,7 @@ public abstract class DefinedPacket
+@@ -129,6 +129,7 @@ public abstract class DefinedPacket
          int len = readVarInt( buf );
          if ( len > maxLen * 3 )
          {
@@ -19,7 +19,7 @@ index 267ebc40..adfcc189 100644
              throw new OverflowPacketException( "Cannot receive string longer than " + maxLen * 3 + " (got " + len + " bytes)" );
          }
  
-@@ -100,6 +101,7 @@ public abstract class DefinedPacket
+@@ -136,6 +137,7 @@ public abstract class DefinedPacket
  
          if ( s.length() > maxLen )
          {
@@ -27,7 +27,7 @@ index 267ebc40..adfcc189 100644
              throw new OverflowPacketException( "Cannot receive string longer than " + maxLen + " (got " + s.length() + " characters)" );
          }
  
-@@ -602,4 +604,21 @@ public abstract class DefinedPacket
+@@ -638,4 +640,21 @@ public abstract class DefinedPacket
  
      @Override
      public abstract String toString();
@@ -189,7 +189,7 @@ index 1b911699..8244154d 100644
 +    // Waterfall end
  }
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/packet/LoginRequest.java b/protocol/src/main/java/net/md_5/bungee/protocol/packet/LoginRequest.java
-index e62a3a03..9789215c 100644
+index d9cadc25..5d32ede3 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/packet/LoginRequest.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/packet/LoginRequest.java
 @@ -71,4 +71,13 @@ public class LoginRequest extends DefinedPacket
@@ -257,5 +257,5 @@ index 738f0c92..ec33d337 100644
 +    // Waterfall end
  }
 -- 
-2.49.0
+2.43.0
 

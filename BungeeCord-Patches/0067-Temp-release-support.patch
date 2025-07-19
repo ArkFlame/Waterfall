@@ -1,15 +1,15 @@
-From 44c080b7d0505a30ea7e7f501fe1298b6a89e2db Mon Sep 17 00:00:00 2001
+From e78cc1db2ddde083089c072e38d4843155ce6aa1 Mon Sep 17 00:00:00 2001
 From: Shane Freeder <theboyetronic@gmail.com>
 Date: Tue, 17 Jun 2025 15:04:22 +0100
 Subject: [PATCH] Temp release support
 
 
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java b/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
-index 1c1a09bc..9c824dcf 100644
+index f8be48b9..5405096c 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
-@@ -119,7 +119,7 @@ public class ProtocolConstants
-                 ProtocolConstants.MINECRAFT_1_21_6
+@@ -121,7 +121,7 @@ public class ProtocolConstants
+                 ProtocolConstants.MINECRAFT_1_21_7
          );
  
 -        if ( SNAPSHOT_SUPPORT )
@@ -18,5 +18,5 @@ index 1c1a09bc..9c824dcf 100644
              // supportedVersions.add( "1.21.x" );
              // supportedVersionIds.add( ProtocolConstants.MINECRAFT_1_21_6 );
 -- 
-2.50.0
+2.43.0
 
