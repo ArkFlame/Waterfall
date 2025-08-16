@@ -1,45 +1,32 @@
-Waterfall
-=========
+# ArkFlame Waterfall
 
-> [!CAUTION]
-> This project has reached end of life and is no longer maintained.  
-> We recommend you transition to [Velocity](https://papermc.io/software/velocity). For more information, see the [announcement](https://forums.papermc.io/threads/1088/).
+ArkFlame Waterfall is an actively maintained fork of the well-known Waterfall server teleportation suite, itself a fork of BungeeCord. Led by Juan Cruz Linsalata (LinsaFTW) and developed by the ArkFlame Development team—the creators of the widely adopted FlameCord with over 10,000 downloads and 200,000 views—this project extends the end-of-life (EOL) support for Waterfall. We provide this open-source software free to the Minecraft server community, using Waterfall as the foundation for our high-performance FlameCord software.
 
-Waterfall is a fork of the well-known [BungeeCord](https://github.com/SpigotMC/BungeeCord) server teleportation suite.
+## Key Focus Areas
+ArkFlame Waterfall emphasizes three core principles:
+- **Stability**: Ensuring a robust and testable codebase to minimize proxy lag and enhance reliability.
+- **Features**: Extending Waterfall with additional features beyond the original BungeeCord, tailored to community needs.
+- **Scalability**: Supporting large numbers of concurrent players with optimized performance on modern hardware and networks.
 
-Waterfall focuses on three main areas:
+## Why Fork Waterfall?
+ArkFlame Waterfall is a principles-driven fork aimed at sustaining and enhancing the Waterfall ecosystem. While the upstream Waterfall project has reached EOL and recommends transitioning to Velocity, ArkFlame Development continues to maintain and update this fork to serve users who rely on Waterfall's proven architecture. Unlike other projects adopting Gradle, we remain committed to Maven for its reliability and performance in our development pipeline.
 
-- **Stability**: Waterfall aims to be stable. We will achieve this through making the code base testable and discouraging practices that lead to proxy lag.
-- **Features**: Waterfall aims to include more features than canonical BungeeCord.
-- **Scalability**: Waterfall should be able to handle a large number of concurrent players, given a reasonably modern CPU, memory, and good network connection.
-
-## Why fork BungeeCord?
-
-Think of Waterfall as a principles fork.
-
-Waterfall was forked because of the fact that upstream does not accept many contributions that are intended to better the ecosystem. Simply put, Waterfall aims to better
-the ecosystem by allowing changes to be exposed to a wider audience more quickly.
-
-Waterfall will still track upstream BungeeCord and merge changes as needed.
+Our mission is to deliver a stable, feature-rich, and scalable proxy solution, incorporating community feedback and contributions to better serve the Minecraft server ecosystem.
 
 ## How To (Server Admins)
+1. Download the latest `Waterfall.jar` from our homepage: [ArkFlame Waterfall](https://arkflame.dev/waterfall).
+2. Ensure your server runs **Java 8 or above**.
+3. Configure and run the proxy as you would with standard Waterfall or BungeeCord setups.
 
-Download a copy of Waterfall.jar from our homepage here: [Waterfall](https://papermc.io/downloads/waterfall)
-
-Waterfall requires **Java 8** or above.
-
-## How To (Plugin Developers)
-------
- * See our API patches [here](BungeeCord-Patches)
- * Waterfall API JavaDocs here: [papermc.io/javadocs](https://jd.papermc.io/waterfall/1.20)
- * Maven repository (for `waterfall-api`):
+### Maven Repository
 ```xml
 <repository>
     <id>papermc</id>
     <url>https://repo.papermc.io/repository/maven-public/</url>
 </repository>
 ```
- * Artifact information:
+
+### Maven Dependency
 ```xml
 <dependency>
     <groupId>io.github.waterfallmc</groupId>
@@ -47,11 +34,9 @@ Waterfall requires **Java 8** or above.
     <version>1.21-R0.3-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
- ```
+```
 
-**Or alternatively, with Gradle:**
-
- * Repository:
+### Gradle Repository
 ```groovy
 repositories {
     maven {
@@ -59,7 +44,8 @@ repositories {
     }
 }
 ```
- * Artifact:
+
+### Gradle Dependency
 ```groovy
 dependencies {
     compileOnly 'io.github.waterfallmc:waterfall-api:1.21-R0.3-SNAPSHOT'
@@ -67,19 +53,19 @@ dependencies {
 ```
 
 ## How To (Compiling From Source)
+To compile ArkFlame Waterfall, you need:
+- **JDK 8**
+- **git**
+- **bash**
+- **Maven**
+- An active internet connection
 
-To compile Waterfall, you need JDK8, git, bash, maven, and an internet connection.
+Steps:
+1. Clone the repository: `git clone https://github.com/arkflame/waterfall.git`.
+2. Navigate to the repository and run `./waterfall b` in a bash terminal.
+3. Find the compiled jar in `Waterfall-Proxy/bootstrap/target/`.
 
-Clone this repo, run `./waterfall b` from *bash*, get jar from Waterfall-Proxy/bootstrap/target/
-
-## Join us
-
-* Feel free to open a PR! We accept contributions.
-* Join us on [Discord](https://discord.gg/papermc).
-* Visit our forums (https://forums.papermc.io/).
-
-## Special Thanks To
-
-![YourKit-Logo](https://yourkit.com/images/yklogo.png)
-
-[YourKit](https://yourkit.com/), makers of the outstanding Java profiler, supports open source projects of all kinds with their full-featured [Java](https://yourkit.com/features/) and [.NET](https://yourkit.com/dotnet/features/) application profilers. We thank them for granting Waterfall an OSS license so that we can make our software the best it can be.
+## Join Us
+We welcome contributions! Feel free to open a pull request (PR) on our [GitHub repository](https://github.com/arkflame/waterfall).  
+Connect with our community:
+- **Discord**: [ArkFlame Development Discord](https://discord.gg/gF36AT3)
