@@ -1,14 +1,14 @@
-From 9e23f15ddcedd1ddda23827e564ecd3058687010 Mon Sep 17 00:00:00 2001
+From ccbbe8b89ef6acc508f7f82a6268907d26989218 Mon Sep 17 00:00:00 2001
 From: Mark Vainomaa <mikroskeem@mikroskeem.eu>
 Date: Wed, 18 Jul 2018 20:23:03 +0300
 Subject: [PATCH] Copy license files into jar
 
 
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 63bc0b32..a70f8c5c 100644
+index f1fadd9d..315f5f91 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
-@@ -131,4 +131,26 @@
+@@ -132,4 +132,26 @@
              <scope>runtime</scope>
          </dependency>
      </dependencies>
@@ -36,5 +36,5 @@ index 63bc0b32..a70f8c5c 100644
 +    <!-- Waterfall end -->
  </project>
 -- 
-2.44.0
+2.43.0
 

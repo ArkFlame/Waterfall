@@ -1,4 +1,4 @@
-From 4bf741b711326cad7051ac737d7ba112f99c205d Mon Sep 17 00:00:00 2001
+From 954d5aa3e32098156059b7d80b094bc35e3f9610 Mon Sep 17 00:00:00 2001
 From: Tux <write@imaginarycode.com>
 Date: Thu, 19 May 2016 19:33:31 +0200
 Subject: [PATCH] POM Changes
@@ -154,7 +154,7 @@ index 6be22739..a4516ed9 100644
              return;
          }
 diff --git a/chat/pom.xml b/chat/pom.xml
-index a149e83c..b5180fb8 100644
+index ed80a085..79a94905 100644
 --- a/chat/pom.xml
 +++ b/chat/pom.xml
 @@ -4,19 +4,19 @@
@@ -184,7 +184,7 @@ index a149e83c..b5180fb8 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index 24150823..0832a8cb 100644
+index 5f0f46a8..b8d4d69a 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -4,19 +4,19 @@
@@ -595,7 +595,7 @@ index d7ff234f..ecfaeb7e 100644
          <license>
              <name>BSD-3-Clause</name>
 diff --git a/pom.xml b/pom.xml
-index 6db2b04b..8dbe11bb 100644
+index 7c931649..8ccae176 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -3,18 +3,18 @@
@@ -667,7 +667,7 @@ index 6db2b04b..8dbe11bb 100644
      </issueManagement>
 -    <ciManagement>
 -        <system>jenkins</system>
--        <url>http://ci.md-5.net/job/BungeeCord</url>
+-        <url>https://hub.spigotmc.org/jenkins/job/BungeeCord/</url>
 -    </ciManagement>
  
      <distributionManagement>
@@ -913,7 +913,7 @@ index 98c88cad..c57c6b13 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/serializer/pom.xml b/serializer/pom.xml
-index d22931c0..c5cb6c2d 100644
+index b082b3e6..2159b626 100644
 --- a/serializer/pom.xml
 +++ b/serializer/pom.xml
 @@ -4,19 +4,19 @@
@@ -989,5 +989,5 @@ index a062a210..2a74a343 100644
      <properties>
          <checkstyle.skip>true</checkstyle.skip>
 -- 
-2.51.0
+2.43.0
 

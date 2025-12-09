@@ -1,4 +1,4 @@
-From 11e76cd77090962082a021e69881c1cbe7194653 Mon Sep 17 00:00:00 2001
+From 853a9e9de1dfba27515c129ffd21d6e608559d55 Mon Sep 17 00:00:00 2001
 From: Jamie Mansfield <dev@jamierocks.uk>
 Date: Thu, 19 May 2016 10:55:20 -0700
 Subject: [PATCH] Disable Metrics
@@ -6,10 +6,10 @@ Subject: [PATCH] Disable Metrics
 MCStats has not been stable for a long while now, and in our opinion it is not worth migrating to an alternative service. Waterfall has been maintained for the past two years without any or much consideration to statistics, we have users and that's enough for us ;)
 
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-index d4d2866f..139426bb 100644
+index 8df78ace..52f2044f 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-@@ -114,7 +114,7 @@ public class BungeeCord extends ProxyServer
+@@ -115,7 +115,7 @@ public class BungeeCord extends ProxyServer
       * locations.yml save thread.
       */
      private final Timer saveThread = new Timer( "Reconnect Saver" );
@@ -18,7 +18,7 @@ index d4d2866f..139426bb 100644
      /**
       * Server socket listener.
       */
-@@ -319,7 +319,7 @@ public class BungeeCord extends ProxyServer
+@@ -320,7 +320,7 @@ public class BungeeCord extends ProxyServer
                  }
              }
          }, 0, TimeUnit.MINUTES.toMillis( 5 ) );
@@ -27,7 +27,7 @@ index d4d2866f..139426bb 100644
  
          Runtime.getRuntime().addShutdownHook( new Thread()
          {
-@@ -475,7 +475,7 @@ public class BungeeCord extends ProxyServer
+@@ -476,7 +476,7 @@ public class BungeeCord extends ProxyServer
              reconnectHandler.close();
          }
          saveThread.cancel();
@@ -177,5 +177,5 @@ index eabf7573..00000000
 -    }
 -}
 -- 
-2.49.0
+2.43.0
 

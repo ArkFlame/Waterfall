@@ -1,4 +1,4 @@
-From 91db12e0c8cf76abbb1803b8552a5d0d861eac54 Mon Sep 17 00:00:00 2001
+From 7a7dbfb473390c4ddd8bcacf971f06d189c6998c Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Wed, 29 Jun 2016 13:56:57 -0500
 Subject: [PATCH] Configurable server version in ping response
@@ -66,10 +66,10 @@ index 91743f01..111404fb 100644
      public int getTabThrottle() {
          return tabThrottle;
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-index a8041258..23f13633 100644
+index 6384b739..2a20964e 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-@@ -723,7 +723,7 @@ public class BungeeCord extends ProxyServer
+@@ -700,7 +700,7 @@ public class BungeeCord extends ProxyServer
      @Override
      public String getGameVersion()
      {
@@ -79,5 +79,5 @@ index a8041258..23f13633 100644
  
      @Override
 -- 
-2.49.0
+2.43.0
 

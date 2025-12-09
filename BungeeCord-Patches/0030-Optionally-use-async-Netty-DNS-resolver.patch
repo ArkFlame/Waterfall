@@ -1,4 +1,4 @@
-From 0baa81646117e2cfdf18ff8077c942bbb0d32a5c Mon Sep 17 00:00:00 2001
+From 6ab6f3f9ef9743ad515c88068fe032dbdcc5dc48 Mon Sep 17 00:00:00 2001
 From: Tux <write@imaginarycode.com>
 Date: Wed, 21 Dec 2016 03:13:03 -0500
 Subject: [PATCH] Optionally use async Netty DNS resolver
@@ -24,10 +24,10 @@ index 749059ab..6141128b 100644
  
      /**
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 86b5c04b..d5896858 100644
+index 315f5f91..60d82065 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
-@@ -34,6 +34,18 @@
+@@ -35,6 +35,18 @@
              <artifactId>netty-codec-http</artifactId>
              <scope>compile</scope>
          </dependency>
@@ -175,5 +175,5 @@ index 0bfcc94e..9756589e 100644
 +    // Waterfall End
  }
 -- 
-2.49.0
+2.43.0
 

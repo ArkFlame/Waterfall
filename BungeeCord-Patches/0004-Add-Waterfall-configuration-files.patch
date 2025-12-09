@@ -1,4 +1,4 @@
-From 39d85d3f521e27dd286fb96b6af66c301bc051dc Mon Sep 17 00:00:00 2001
+From 6eef1e5845f2ed149e789e985682fb3fc7859d21 Mon Sep 17 00:00:00 2001
 From: Techcable <Techcable@techcable.net>
 Date: Tue, 25 Oct 2016 11:58:37 -0400
 Subject: [PATCH] Add Waterfall configuration files
@@ -42,7 +42,7 @@ index 00000000..741ebfde
 +
 +}
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-index 3158dbfa..d4d2866f 100644
+index 3a1f7174..8df78ace 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 @@ -6,6 +6,7 @@ import com.google.common.collect.Iterables;
@@ -53,7 +53,7 @@ index 3158dbfa..d4d2866f 100644
  import io.netty.bootstrap.ServerBootstrap;
  import io.netty.channel.Channel;
  import io.netty.channel.ChannelException;
-@@ -103,7 +104,7 @@ public class BungeeCord extends ProxyServer
+@@ -104,7 +105,7 @@ public class BungeeCord extends ProxyServer
       * Configuration.
       */
      @Getter
@@ -76,7 +76,7 @@ index b16d24e1..4e974d17 100644
  
      /**
 diff --git a/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java b/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
-index a08d4772..3d97d674 100644
+index 39809d60..f8df7d10 100644
 --- a/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
 +++ b/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
 @@ -46,10 +46,15 @@ public class YamlConfig implements ConfigurationAdapter
@@ -118,5 +118,5 @@ index a08d4772..3d97d674 100644
          if ( permissions == null )
          {
 -- 
-2.49.0
+2.43.0
 

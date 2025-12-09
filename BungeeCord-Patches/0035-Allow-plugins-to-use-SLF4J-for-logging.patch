@@ -1,14 +1,14 @@
-From 744e3eab49b9499e6862219c0e051bccf115e03a Mon Sep 17 00:00:00 2001
+From 4080142ef6f35854a5a73db531d1aefa5b808a11 Mon Sep 17 00:00:00 2001
 From: Minecrell <minecrell@minecrell.net>
 Date: Fri, 22 Sep 2017 13:15:09 +0200
 Subject: [PATCH] Allow plugins to use SLF4J for logging
 
 
 diff --git a/api/src/main/java/net/md_5/bungee/api/plugin/Plugin.java b/api/src/main/java/net/md_5/bungee/api/plugin/Plugin.java
-index 9660234d..3d1e9a3a 100644
+index 628ce968..faa06a92 100644
 --- a/api/src/main/java/net/md_5/bungee/api/plugin/Plugin.java
 +++ b/api/src/main/java/net/md_5/bungee/api/plugin/Plugin.java
-@@ -44,6 +44,13 @@ public class Plugin
+@@ -45,6 +45,13 @@ public class Plugin
          // init( proxy, description );
      }
  
@@ -23,7 +23,7 @@ index 9660234d..3d1e9a3a 100644
       * Called when the plugin has just been loaded. Most of the proxy will not
       * be initialized, so only use it for registering
 diff --git a/log4j/pom.xml b/log4j/pom.xml
-index 4bb98d5a..f9bdf71f 100644
+index c4b266dd..1f89eed2 100644
 --- a/log4j/pom.xml
 +++ b/log4j/pom.xml
 @@ -38,6 +38,24 @@
@@ -52,5 +52,5 @@ index 4bb98d5a..f9bdf71f 100644
              <groupId>com.lmax</groupId>
              <artifactId>disruptor</artifactId>
 -- 
-2.44.0
+2.43.0
 
